@@ -1,0 +1,10 @@
+services:
+  pocketbase:
+    build: .
+    ports:
+      - "${LOCAL_PORT}:8080"
+    volumes:
+      - ./pb_data:/pb/pb_data
+    environment:
+      - POCKETBASE_ADMIN_EMAIL=admin@example.com
+      - POCKETBASE_ADMIN_PASSWORD=changeme123
