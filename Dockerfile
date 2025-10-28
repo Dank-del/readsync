@@ -7,7 +7,7 @@ ENV NODE_ENV=production
 
 COPY readsync-frontend /app
 WORKDIR /app
-RUN bun install --production
+RUN bun install
 RUN bun run build
 
 # ============================
